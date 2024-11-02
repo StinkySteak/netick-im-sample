@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerCharacterPrefab: {fileID: 1894361140281920956, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
   _propsPrefab: {fileID: 4057949783122814819, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
-  _propsCount: 60
+  _propsCount: 100
   _spawnRadius: 70
   _spawnRadiusUp: 20
