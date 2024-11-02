@@ -26,23 +26,36 @@ namespace StinkySteak.IM.Player
         {
             if (FetchInput(out PlayerCharacterInput input))
             {
-                Vector3 forward = input.Forward * transform.forward;
-                Vector3 right = input.Right * transform.right;
-                Vector3 up = input.Up * Vector3.up;
-
-                Vector3 direction = forward + right + up;
-
-                transform.position += direction * Sandbox.FixedDeltaTime * _moveSpeed;
-
-                Vector3 yaw = input.Yaw * Vector3.up * _rotateSpeed;
-                transform.Rotate(yaw);
+                Move(input);
+                Rotate(input);
             }
 
-            if (IsServer)
-            {
-                NetickBounds area = new(transform.position.ToNumerics(), _interestSize.ToNumerics());
-                InputSource.AddInterestBoxArea(area);
-            }
+            ProcessIM();
+        }
+
+        private void ProcessIM()
+        {
+            if (!IsServer) return;
+
+            NetickBounds area = new(transform.position.ToNumerics(), _interestSize.ToNumerics());
+            InputSource.AddInterestBoxArea(area);
+        }
+
+        private void Move(PlayerCharacterInput input)
+        {
+            Vector3 forward = input.Forward * transform.forward;
+            Vector3 right = input.Right * transform.right;
+            Vector3 up = input.Up * Vector3.up;
+
+            Vector3 direction = forward + right + up;
+
+            transform.position += direction * Sandbox.FixedDeltaTime * _moveSpeed;
+        }
+
+        private void Rotate(PlayerCharacterInput input)
+        {
+            Vector3 yaw = input.Yaw * Vector3.up * _rotateSpeed;
+            transform.Rotate(yaw);
         }
 
         public override void OnBecameInterested()
