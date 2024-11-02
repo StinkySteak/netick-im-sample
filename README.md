@@ -1,6 +1,6 @@
 # Netick IM Sample
 
-This sample demonstrates on how to utilize Interest Management (Area of Interest) with addition of Sandboxing.
+This sample demonstrates on how to use Interest Management (using Area of Interest), with the usage of Sandboxing too.
 
 ![Preview](https://github.com/StinkySteak/netick-im-sample/blob/docs/overview.gif)
 
@@ -10,10 +10,10 @@ This sample demonstrates on how to utilize Interest Management (Area of Interest
 
 ## Technical Info
 - Unity: 2021.3.21f1
-- Netick 2 Beta 0.12.50
+- Netick 2 Beta 0.12.50 [Pro]
 - Platforms: PC (Windows)
 
 ## Highlights
 - AoI (Broad Phase Filtering)
 - A small usage of Narrow Phase Filtering
-- Sandboxing compatbile
+- Sandboxing compatible
