@@ -9,6 +9,11 @@ namespace StinkySteak.IM.Gameplay
         [SerializeField] private GameObject _renderer;
         [SerializeField] private bool _setInterestNarrow;
 
+        public void SetInterestNarrow(bool setInterest)
+        {
+            _setInterestNarrow = setInterest;
+        }
+
         public override void NetworkFixedUpdate()
         {
             if (!IsServer) return;
