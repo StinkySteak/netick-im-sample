@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452409eff91ae2b429013ced08d21a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
+  _moveSpeed: 9
   _interpolationTarget: {fileID: 1894361140374840400}
   _rotateSpeed: 2
   _interestSize: {x: 5, y: 5, z: 5}
