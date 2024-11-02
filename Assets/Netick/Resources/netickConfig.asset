@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 2061283162, guid: da78c2c9df60edc4fb5f65b59fa57c41, type: 3}
   m_Name: netickConfig
   m_EditorClassIdentifier: 
-  _Prefabs: []
+  _Prefabs:
+  - Obj: {fileID: 1894361140281920956, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
+    InstanceId: 35276
+    Name: PlayerCharacter
+    FileName: Assets/_IM/Prefabs/Gameplay/PlayerCharacter.prefab
+    GO: {fileID: 1894361140281920955, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
+    Id: 1
+  - Obj: {fileID: 4057949783122814819, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
+    InstanceId: 37118
+    Name: Props
+    FileName: Assets/_IM/Prefabs/Gameplay/Props.prefab
+    GO: {fileID: 4057949783122814817, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
+    Id: 2
   TickRate: 33.333336
   MaxPlayers: 16
   MaxObjects: 512
@@ -29,18 +41,18 @@ MonoBehaviour:
   PhysicsType: 1
   InvokeRenderInHeadless: 0
   InvokeUpdate: 1
-  RenderInvokeOrder: 1
+  RenderInvokeOrder: 0
   MaxAdditiveScenes: 4
   InputReuseAtLowFPS: 0
   EnableLogging: 1
   ServerSimulatedLossOut: 0
   ClientSimulatedLossOut: 0
   EnableLagCompensation: 0
-  EnableInterestManagement: 0
+  EnableInterestManagement: 1
   CustomGroupCount: 2
   SimulationCulling: 0
-  CellSize: 450
-  WorldSize: {x: 8000, y: 1, z: 8000}
-  RenderWorldGrid: 0
+  CellSize: 20
+  WorldSize: {x: 100, y: 1, z: 100}
+  RenderWorldGrid: 1
   UseSceneSwitchThread: 1
   LagCompensationDebug: 1

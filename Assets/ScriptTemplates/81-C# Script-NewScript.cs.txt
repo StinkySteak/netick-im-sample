@@ -1,0 +1,9 @@
+using UnityEngine;
+
+namespace StinkySteak.IM
+{
+    public class #SCRIPTNAME# : MonoBehaviour
+    {
+        #NOTRIM#
+    }
+}
