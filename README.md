@@ -17,3 +17,14 @@ This sample demonstrates on how to use Interest Management (using Area of Intere
 - AoI (Broad Phase Filtering)
 - A small usage of Narrow Phase Filtering
 - Sandboxing compatible
+
+## Controls
+| Controls                	| Action      	|
+|-------------------------	|-------------	|
+| WASD                    	| Move        	|
+| Q/E                     	| Rotate      	|
+| Left/Right Mouse Button 	| Fly Up/Down 	|
+
+### How to test Narrow Phase Filter
+- Enable Props `NetworkObject` `NarrowPhaseFilter` in the inspector
+- Click either "Set Interest to None" or "Set Interest to All" in the bottom right corner (Narrow Phase Filter only)
