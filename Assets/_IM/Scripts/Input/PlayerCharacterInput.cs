@@ -2,12 +2,14 @@ using Netick;
 
 namespace StinkySteak.IM.PlayerInput
 {
+    [Networked]
     public struct PlayerCharacterInput : INetworkInput
     {
-        public float Right;
-        public float Forward;
-        public float Up;
+        public int Right;
+        public int Forward;
+        public int Up;
 
-        public float Yaw;
+        [Networked]
+        public float Yaw { get; set; }
     }
 }
