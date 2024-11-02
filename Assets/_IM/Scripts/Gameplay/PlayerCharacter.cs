@@ -49,7 +49,7 @@ namespace StinkySteak.IM.Player
 
             Vector3 direction = forward + right + up;
 
-            transform.position += direction * Sandbox.FixedDeltaTime * _moveSpeed;
+            transform.position += direction.normalized * Sandbox.FixedDeltaTime * _moveSpeed;
         }
 
         private void Rotate(PlayerCharacterInput input)
