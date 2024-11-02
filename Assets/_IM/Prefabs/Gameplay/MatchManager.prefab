@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8805006744006351532}
   - component: {fileID: 8805006744006351539}
+  - component: {fileID: 2107111482813917106}
   m_Layer: 0
   m_Name: MatchManager
   m_TagString: Untagged
@@ -49,3 +50,27 @@ MonoBehaviour:
   _propsCount: 100
   _spawnRadius: 70
   _spawnRadiusUp: 20
+--- !u!114 &2107111482813917106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8805006744006351533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1923973434, guid: da78c2c9df60edc4fb5f65b59fa57c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _BroadPhaseFilter: 0
+  _SpatialPrioritization: 0
+  _NarrowPhaseFilter: 0
+  AddToNetworkLoop: 1
+  GlobalObjectIdHash: 0
+  SceneId: -1
+  _PrefabId: 1
+  PrefabRoot: {fileID: 0}
+  Children: []
+  PrefabIndex: -1
+  Persistent: 0
+  _predictionMode: 0

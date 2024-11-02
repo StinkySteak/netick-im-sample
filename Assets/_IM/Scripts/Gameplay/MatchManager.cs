@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace StinkySteak.IM.Gameplay.Match
 {
-    public class MatchManager : NetworkEventsListener
+    public class MatchManager : NetworkBehaviour
     {
         [SerializeField] private NetworkObject _playerCharacterPrefab;
         [SerializeField] private NetworkObject _propsPrefab;
@@ -11,9 +11,11 @@ namespace StinkySteak.IM.Gameplay.Match
         [SerializeField] private float _spawnRadius;
         [SerializeField] private float _spawnRadiusUp;
 
-        public override void OnSceneLoaded(NetworkSandbox sandbox)
+        public override void NetworkStart()
         {
             if (!Sandbox.IsServer) return;
+
+            Sandbox.Events.OnPlayerConnected += OnPlayerConnected;
 
             for (int i = 0; i < _propsCount; i++)
             {
@@ -24,7 +26,7 @@ namespace StinkySteak.IM.Gameplay.Match
             }
         }
 
-        public override void OnPlayerConnected(NetworkSandbox sandbox, Netick.NetworkPlayer player)
+        private void OnPlayerConnected(NetworkSandbox sandbox, Netick.NetworkPlayer player)
         {
             sandbox.NetworkInstantiate(_playerCharacterPrefab, transform.position, Quaternion.identity, player);
         }

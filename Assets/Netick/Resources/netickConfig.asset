@@ -13,18 +13,24 @@ MonoBehaviour:
   m_Name: netickConfig
   m_EditorClassIdentifier: 
   _Prefabs:
+  - Obj: {fileID: 2107111482813917106, guid: 396fead33773bd546b087972ea582805, type: 3}
+    InstanceId: 18018
+    Name: MatchManager
+    FileName: Assets/_IM/Prefabs/Gameplay/MatchManager.prefab
+    GO: {fileID: 8805006744006351533, guid: 396fead33773bd546b087972ea582805, type: 3}
+    Id: 1
   - Obj: {fileID: 1894361140281920956, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
-    InstanceId: 35276
+    InstanceId: 18052
     Name: PlayerCharacter
     FileName: Assets/_IM/Prefabs/Gameplay/PlayerCharacter.prefab
     GO: {fileID: 1894361140281920955, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
-    Id: 1
+    Id: 2
   - Obj: {fileID: 4057949783122814819, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
-    InstanceId: 37118
+    InstanceId: 18056
     Name: Props
     FileName: Assets/_IM/Prefabs/Gameplay/Props.prefab
     GO: {fileID: 4057949783122814817, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
-    Id: 2
+    Id: 3
   TickRate: 33.333336
   MaxPlayers: 16
   MaxObjects: 512
