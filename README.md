@@ -4,6 +4,7 @@ This sample demonstrates on how to use Interest Management (using Area of Intere
 There are 2 Available Samples: 3D and 2D
 
 ![Preview](https://github.com/StinkySteak/netick-im-sample/blob/docs/overview.gif)
+![Preview](https://github.com/StinkySteak/netick-im-sample/blob/docs/overview_2d.gif)
 
 | Version | Release Date |
 | :-------- | :------- 
