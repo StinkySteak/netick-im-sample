@@ -24,8 +24,9 @@ namespace StinkySteak.IM.Prototype.UI
             float buttonHeight = 50;
             float offset = 10;
 
-            Vector2 positionA = new Vector2(Screen.width - (buttonWidth + offset), Screen.height - (buttonHeight + offset));
+            Vector2 positionA = new Vector2(Screen.width - (buttonWidth + offset), Screen.height - ((buttonHeight * 1) + (offset * 1)));
             Vector2 positionB = new Vector2(Screen.width - (buttonWidth + offset), Screen.height - ((buttonHeight * 2) + (offset * 2)));
+            Vector2 positionC = new Vector2(Screen.width - (buttonWidth + offset), Screen.height - ((buttonHeight * 3) + (offset * 3)));
             Vector2 size = new Vector2(buttonWidth, buttonHeight);
 
             if (GUI.Button(new Rect(positionA, size), "Set Interest to All"))
@@ -37,18 +38,39 @@ namespace StinkySteak.IM.Prototype.UI
             {
                 SetInterestNarrowAll(false);
             }
+
+            if (GUI.Button(new Rect(positionC, size), "Random Props Color"))
+            {
+                ChangePropsColorToRandomAll();
+            }
+        }
+
+        private void ScanProps()
+        {
+            _props3DBuffer = Sandbox.FindObjectsOfType<Props3D>();
+            _props2DBuffer = Sandbox.FindObjectsOfType<Props2D>();
         }
 
         private void SetInterestNarrowAll(bool setInterest)
         {
-            _props3DBuffer = Sandbox.FindObjectsOfType<Props3D>();
-            _props2DBuffer = Sandbox.FindObjectsOfType<Props2D>();
+            ScanProps();
 
             foreach (Props3D p in _props3DBuffer)
                 p.SetInterestNarrow(setInterest);
 
             foreach (Props2D p in _props2DBuffer)
                 p.SetInterestNarrow(setInterest);
+        }
+
+        private void ChangePropsColorToRandomAll()
+        {
+            ScanProps();
+
+            foreach (Props3D p in _props3DBuffer)
+                p.RandomizeColor();
+
+            foreach (Props2D p in _props2DBuffer)
+                p.RandomizeColor();
         }
     }
 }
