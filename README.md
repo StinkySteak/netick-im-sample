@@ -11,7 +11,7 @@ There are 2 Available Samples: 3D and 2D
 
 ## Technical Info
 - Unity: 2021.3.21f1
-- Netick 2 Beta 0.12.50 [Pro]
+- Netick 2 Beta 0.12.36 [Pro]
 - Platforms: PC (Windows)
 
 ## Highlights
