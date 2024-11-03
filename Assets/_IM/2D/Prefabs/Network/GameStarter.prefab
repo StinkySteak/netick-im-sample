@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3526430920120687503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3526430920120687497}
+  - component: {fileID: 3526430920120687496}
+  - component: {fileID: 3526430920120687498}
+  m_Layer: 0
+  m_Name: GameStarter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3526430920120687497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526430920120687503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3526430920120687496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526430920120687503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5922d4a2e010aac4cb20e7dcf04236f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SandboxPrefab: {fileID: 2556277517511074596, guid: 1b5899aaea39479408499b2ad11d0080, type: 3}
+  Transport: {fileID: 11400000, guid: f882af5456be3154a8815e6cdf45a40a, type: 2}
+  Mode: 4
+  Clients: 1
+  StartServerInMultiplePeersMode: 1
+  AutoStart: 0
+  AutoConnect: 1
+  Port: 25455
+  ServerIPAddress: 127.0.0.1
+  Cap: 1
+  FPS: 450
+  ShowDisconnectButton: 1
+  ShowConnectButton: 1
+  Offset: {x: 36, y: 0}
+--- !u!114 &3526430920120687498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526430920120687503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e98263b86c3b64584c6947931a6bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _physicsType: 2
+  _worldSize: {x: 100, y: 100, z: 1}
+  _cellSize: 15

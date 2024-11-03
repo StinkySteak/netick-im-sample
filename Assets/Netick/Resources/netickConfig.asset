@@ -13,24 +13,42 @@ MonoBehaviour:
   m_Name: netickConfig
   m_EditorClassIdentifier: 
   _Prefabs:
-  - Obj: {fileID: 2107111482813917106, guid: 396fead33773bd546b087972ea582805, type: 3}
-    InstanceId: 18018
+  - Obj: {fileID: 8821581509877721092, guid: f98daf0941131f64eb1a3209fec53742, type: 3}
+    InstanceId: 18540
     Name: MatchManager
-    FileName: Assets/_IM/Prefabs/Gameplay/MatchManager.prefab
-    GO: {fileID: 8805006744006351533, guid: 396fead33773bd546b087972ea582805, type: 3}
+    FileName: Assets/_IM/2D/Prefabs/Gameplay/MatchManager.prefab
+    GO: {fileID: 2116922609081095451, guid: f98daf0941131f64eb1a3209fec53742, type: 3}
     Id: 1
-  - Obj: {fileID: 1894361140281920956, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
-    InstanceId: 18052
-    Name: PlayerCharacter
-    FileName: Assets/_IM/Prefabs/Gameplay/PlayerCharacter.prefab
-    GO: {fileID: 1894361140281920955, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
+  - Obj: {fileID: 8655053943847325082, guid: cee11ef14dec338438a334771ecd1110, type: 3}
+    InstanceId: 18148
+    Name: PlayerCharacter2D
+    FileName: Assets/_IM/2D/Prefabs/Gameplay/PlayerCharacter2D.prefab
+    GO: {fileID: 8655053943847325077, guid: cee11ef14dec338438a334771ecd1110, type: 3}
     Id: 2
-  - Obj: {fileID: 4057949783122814819, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
-    InstanceId: 18056
-    Name: Props
-    FileName: Assets/_IM/Prefabs/Gameplay/Props.prefab
-    GO: {fileID: 4057949783122814817, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
+  - Obj: {fileID: 586393774024194758, guid: 46c31ae7df71bf047bd9968ea7efb136, type: 3}
+    InstanceId: 18152
+    Name: Props2D
+    FileName: Assets/_IM/2D/Prefabs/Gameplay/Props2D.prefab
+    GO: {fileID: 586393774024194761, guid: 46c31ae7df71bf047bd9968ea7efb136, type: 3}
     Id: 3
+  - Obj: {fileID: 2107111482813917106, guid: 396fead33773bd546b087972ea582805, type: 3}
+    InstanceId: 18156
+    Name: MatchManager
+    FileName: Assets/_IM/3D/Prefabs/Gameplay/MatchManager.prefab
+    GO: {fileID: 8805006744006351533, guid: 396fead33773bd546b087972ea582805, type: 3}
+    Id: 4
+  - Obj: {fileID: 1894361140281920956, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
+    InstanceId: 18160
+    Name: PlayerCharacter
+    FileName: Assets/_IM/3D/Prefabs/Gameplay/PlayerCharacter.prefab
+    GO: {fileID: 1894361140281920955, guid: da282327d5159eb47a8747586bebb2c8, type: 3}
+    Id: 5
+  - Obj: {fileID: 4057949783122814819, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
+    InstanceId: 18164
+    Name: Props3D
+    FileName: Assets/_IM/3D/Prefabs/Gameplay/Props3D.prefab
+    GO: {fileID: 4057949783122814817, guid: cf6d0ab6044f6da4cb269744e777059c, type: 3}
+    Id: 6
   TickRate: 33.333336
   MaxPlayers: 16
   MaxObjects: 512
