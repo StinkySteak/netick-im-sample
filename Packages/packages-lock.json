@@ -7,7 +7,7 @@
       "dependencies": {
         "com.unity.nuget.mono-cecil": "1.11.4"
       },
-      "hash": "f8e745bb3219918d950952ef3358d54a4cb5b18a"
+      "hash": "5acdcdbebedd6b7ad6b8e47311b6eb90b7ab93bc"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
