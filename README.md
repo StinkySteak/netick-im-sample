@@ -19,7 +19,8 @@ There are 2 Available Samples: 3D and 2D
 - AoI (Broad Phase Filtering)
 - A small usage of Narrow Phase Filtering
 - Sandboxing compatible
-- Late OnChanged Test
+- 3D and 2D Sample
+- Late OnChanged Capability
 
 ## How to Test?
 
