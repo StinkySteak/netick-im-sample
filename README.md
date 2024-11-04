@@ -42,3 +42,6 @@ There are 2 Available Samples: 3D and 2D
 ### How to test Narrow Phase Filter
 - Enable Props `NetworkObject` `NarrowPhaseFilter` in the inspector
 - Click either "Set Interest to None" or "Set Interest to All" in the bottom right corner (Narrow Phase Filter only)
+
+### Tips
+- On 2D Project, make sure to use `Vector3` as Interest Size in `AddInterestBoxArea`. We still have to use the Z value of minimum 1
