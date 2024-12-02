@@ -13,7 +13,7 @@ namespace StinkySteak.IM.Setup
         {
             NetickConfig config = Resources.Load<NetickConfig>(nameof(NetickConfig));
             config.PhysicsType = _physicsType;
-            config.CellSize = _cellSize;
+            config.AoILayer0CellSize = _cellSize;
             config.WorldSize = _worldSize;
         }
     }
